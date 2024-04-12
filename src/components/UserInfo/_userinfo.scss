@@ -1,0 +1,11 @@
+.user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.688rem;
+  align-items: center;
+  @media (max-width: 899px) {
+    flex-direction: row-reverse;
+    gap: 0;
+    justify-content: space-between;
+  }
+}

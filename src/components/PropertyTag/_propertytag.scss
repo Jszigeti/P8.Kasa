@@ -1,0 +1,30 @@
+.tags-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0.625rem;
+  margin: 1.25rem 0 1.5rem;
+  @media (max-width: 899px) {
+    margin: 0.625rem 0 1rem;
+    flex-wrap: wrap;
+  }
+}
+.tags {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 7.188rem;
+  height: 1.563rem;
+  border-radius: 0.625rem;
+  background: $main-color;
+  color: $third-color;
+  font-size: 0.875rem;
+  font-weight: $large-font;
+  text-align: center;
+  padding: 0 0.5rem;
+  @media (max-width: 899px) {
+    font-size: 0.625rem;
+    min-width: 5.25rem;
+    padding: 0;
+    height: 1.125rem;
+  }
+}

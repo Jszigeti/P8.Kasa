@@ -1,0 +1,30 @@
+.user-avatar {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  p {
+    display: flex;
+    align-items: center;
+    color: $main-color;
+    text-align: right;
+    font-size: 1.125rem;
+    font-weight: $medium-font;
+    width: 5.813rem;
+    height: 3.25rem;
+    @media (max-width: 899px) {
+      font-size: 0.75rem;
+      width: 4rem;
+    }
+  }
+  img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 2rem;
+    object-fit: cover;
+    @media (max-width: 899px) {
+      width: 2rem;
+      height: 2rem;
+      border-radius: 1rem;
+    }
+  }
+}

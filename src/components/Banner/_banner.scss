@@ -1,0 +1,45 @@
+#banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  border-radius: 1.563rem;
+  background: $secondary-color;
+  height: 13.938rem;
+  width: 85%;
+  position: relative;
+  margin-bottom: 2.688rem;
+  @media (max-width: 899px) {
+    width: 90%;
+    min-width: 20.938rem;
+    height: 6.938rem;
+    margin-bottom: 1.375rem;
+    justify-content: flex-start;
+  }
+  img {
+    border-radius: 1.563rem;
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+    position: absolute;
+  }
+  div {
+    position: absolute;
+    color: $third-color;
+    text-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    font-size: 3rem;
+    font-weight: $large-font;
+    display: flex;
+    gap: 1rem;
+    @media (max-width: 1199px) {
+      font-size: 2.25rem;
+    }
+    @media (max-width: 899px) {
+      flex-direction: column;
+      font-size: 1.5rem;
+      gap: 0;
+      padding-left: 1rem;
+    }
+  }
+}

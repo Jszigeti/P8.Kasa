@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+### Starting JSON-SERVER (VERY IMPORTANT, MUST BE DONE BEFORE RUN NPM)
+
+Before running npm, make sure to run json-server on port 3030 with the following script: `json-server .\src\Datas\datas.json --port 3030` then run npm in a second terminal.
+
 ## Available Scripts
 
 In the project directory, you can run:

@@ -1,0 +1,30 @@
+// RESETTING CSS
+@import "./resetting";
+
+// FONT AND VARIABLES
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import "./variables";
+html {
+  font-family: Montserrat;
+}
+
+// COMPONENTS
+// GENERAL
+@import "../components/Header/header";
+@import "../components/Navbar/navbar";
+@import "../components/Banner/banner";
+@import "../components/Footer/footer";
+@import "../components/ErrorMessage/errormessage";
+@import "../components/Collapse/collapse";
+// HOME PAGE
+@import "../components/Container/container";
+@import "../components/Card/card";
+// PROPERTY PAGE
+@import "../components/Slideshow/slideshow";
+@import "../components/PropertyDetails/propertydetails";
+@import "../components/PropertyTitle/propertytitle";
+@import "../components/PropertyTag/propertytag";
+@import "../components/UserInfo/userinfo";
+@import "../components/UserAvatar/useravatar";
+@import "../components/UserRating/userrating";
+@import "../components/PropertyCollapses/propertycollapses";

@@ -1,0 +1,43 @@
+#error-page {
+  margin: 5.563rem 0 8.688rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8.688rem;
+  align-items: center;
+  color: $main-color;
+  div {
+    font-size: 18rem;
+    font-weight: $large-font;
+    @media (max-width: 1199px) {
+      font-size: 12rem;
+    }
+    @media (max-width: 899px) {
+      font-size: 6rem;
+    }
+  }
+  span {
+    font-size: 2.25rem;
+    font-weight: $medium-font;
+    @media (max-width: 1199px) {
+      font-size: 1.5rem;
+    }
+    @media (max-width: 899px) {
+      font-size: 1.125rem;
+      text-align: center;
+      max-width: 90%;
+    }
+  }
+  p {
+    color: $secondary-color;
+    text-decoration: underline;
+    font-size: 1.125rem;
+    font-weight: 500;
+    text-decoration-skip-ink: none;
+    @media (max-width: 1199px) {
+      font-size: 1rem;
+    }
+    @media (max-width: 899px) {
+      font-size: 0.875rem;
+    }
+  }
+}

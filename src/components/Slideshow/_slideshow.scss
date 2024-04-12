@@ -1,0 +1,65 @@
+.carrousel {
+  margin: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 85%;
+  height: 25.938rem;
+  margin-bottom: 1.875rem;
+  @media (max-width: 899px) {
+    height: 15.938rem;
+    width: 90%;
+  }
+}
+
+.slide {
+  border-radius: 1.563em;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  &.slide-hidden {
+    display: none;
+  }
+}
+
+.arrow {
+  position: absolute;
+  width: 2.918rem;
+  height: 4.95rem;
+  color: $third-color;
+  @media (max-width: 899px) {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+  &.arrow-left {
+    left: 1.46rem;
+    bottom: 11.194rem;
+    @media (max-width: 899px) {
+      left: 0;
+      bottom: 7.188rem;
+    }
+  }
+  &.arrow-right {
+    right: 1.46rem;
+    bottom: 11.194rem;
+    @media (max-width: 899px) {
+      right: 0;
+      bottom: 7.188rem;
+    }
+  }
+}
+
+.indicator {
+  position: absolute;
+  bottom: 1.558rem;
+  color: $third-color;
+  font-size: 1.125rem;
+  font-weight: $medium-font;
+  @media (max-width: 899px) {
+    display: none;
+  }
+}

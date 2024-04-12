@@ -1,0 +1,17 @@
+header {
+  margin: auto;
+  margin-top: 2.813rem;
+  margin-bottom: 3.125rem;
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media (max-width: 899px) {
+    margin-bottom: 1.688rem;
+  }
+  img {
+    @media (max-width: 899px) {
+      width: 145px;
+    }
+  }
+}
