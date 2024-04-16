@@ -237,7 +237,8 @@ footer {
   height: 13.063rem;
   display: flex;
   justify-content: center;
-  width: 100%;
+  margin: auto;
+  max-width: 90rem;
 }
 footer div {
   display: flex;
@@ -540,6 +541,10 @@ article::before {
   .indicator {
     display: none;
   }
+}
+
+.hidden {
+  display: none;
 }
 
 .property-details {

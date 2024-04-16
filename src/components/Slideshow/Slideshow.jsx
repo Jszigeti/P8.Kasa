@@ -21,7 +21,10 @@ function Slideshow({ currentProperty }) {
       <FontAwesomeIcon
         icon={faChevronLeft}
         style={{ color: "#ffffff" }}
-        className="arrow arrow-left"
+        className={
+          currentProperty.pictures.length < 2 ? "hidden" : "arrow arrow-left"
+        }
+        // className="arrow arrow-left"
         onClick={prevSlide}
       />
       {currentProperty.pictures.map((pic, i) => {
@@ -37,10 +40,19 @@ function Slideshow({ currentProperty }) {
       <FontAwesomeIcon
         icon={faChevronRight}
         style={{ color: "#ffffff" }}
-        className="arrow arrow-right"
+        className={
+          currentProperty.pictures.length < 2
+            ? "arrow hidden"
+            : "arrow arrow-right"
+        }
+        // className="arrow arrow-right"
         onClick={nextSlide}
       />
-      <span className="indicator">
+      <span
+        className={
+          currentProperty.pictures.length < 2 ? "indicator hidden" : "indicator"
+        }
+      >
         {`${slide + 1}/${currentProperty.pictures.length}`}
       </span>
     </section>

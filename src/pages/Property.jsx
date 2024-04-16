@@ -9,8 +9,6 @@ import { propertiesDatas } from "../api/api";
 function Property() {
   let pageId = useParams();
   const currentProperty = propertiesDatas.find((p) => p.id === pageId.id);
-  // currentProperty === undefined && <Navigate to="*" replace={true} />;
-  // console.log(currentProperty);
   if (currentProperty === undefined) {
     return <Navigate to="*" replace={true} />;
   }
