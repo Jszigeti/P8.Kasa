@@ -8,7 +8,7 @@ function About() {
   return (
     <>
       <Header />
-      <Banner banner="/about-banner.jpg" />
+      <Banner banner="/assets/about-banner.jpg" />
       {aboutDatas.map((aboutData) => (
         <Collapse
           title={aboutData.title}

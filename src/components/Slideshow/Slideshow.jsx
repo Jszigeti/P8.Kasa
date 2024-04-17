@@ -24,7 +24,6 @@ function Slideshow({ currentProperty }) {
         className={
           currentProperty.pictures.length < 2 ? "hidden" : "arrow arrow-left"
         }
-        // className="arrow arrow-left"
         onClick={prevSlide}
       />
       {currentProperty.pictures.map((pic, i) => {
@@ -45,7 +44,6 @@ function Slideshow({ currentProperty }) {
             ? "arrow hidden"
             : "arrow arrow-right"
         }
-        // className="arrow arrow-right"
         onClick={nextSlide}
       />
       <span

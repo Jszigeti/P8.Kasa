@@ -5,7 +5,7 @@ function Header() {
   return (
     <header>
       <NavLink to="/">
-        <img src="/header-logo.svg" alt="Kasa Logo" />
+        <img src="/assets/header-logo.svg" alt="Kasa Logo" />
       </NavLink>
       <Navbar />
     </header>

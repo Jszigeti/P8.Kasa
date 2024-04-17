@@ -8,7 +8,7 @@ function Home() {
     <>
       <Header />
       <Banner
-        banner="/home-banner.jpg"
+        banner="/assets/home-banner.jpg"
         lineOne="Chez vous,"
         lineTwo="partout et ailleurs"
       />
