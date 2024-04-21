@@ -7,11 +7,17 @@ import { useParams, Navigate } from "react-router-dom";
 import { propertiesDatas } from "../api/api";
 
 function Property() {
+  // Retrieve property ID via URL
   let pageId = useParams();
+
+  // Determine the data to retrieve based on the property ID
   const currentProperty = propertiesDatas.find((p) => p.id === pageId.id);
+
+  // Redirect to error page if ID does not exist
   if (currentProperty === undefined) {
     return <Navigate to="*" replace={true} />;
   }
+
   return (
     <>
       <Header />

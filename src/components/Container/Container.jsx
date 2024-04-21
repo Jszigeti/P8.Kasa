@@ -4,6 +4,7 @@ import { propertiesDatas } from "../../api/api";
 function Container() {
   return (
     <main id="card-list">
+      {/* Create a card for each property */}
       {propertiesDatas.map((property) => (
         <Card propertiesDatasObj={property} key={property.id} />
       ))}

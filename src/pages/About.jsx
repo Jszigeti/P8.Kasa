@@ -9,6 +9,7 @@ function About() {
     <>
       <Header />
       <Banner banner="/assets/about-banner.jpg" />
+      {/* Create a collapse for each element of the AboutData array */}
       {aboutDatas.map((aboutData) => (
         <Collapse
           title={aboutData.title}

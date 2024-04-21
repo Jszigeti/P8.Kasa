@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 function UserRating({ currentProperty }) {
+  // Creates an array with five indexes and compares it to the rating property
   const ratedStars = Array.from(
     { length: 5 },
     (_, i) => i < currentProperty.rating
@@ -9,6 +10,7 @@ function UserRating({ currentProperty }) {
 
   return (
     <div className="user-rating">
+      {/* Generate a solid star if the value is true and an empty star if the value is false */}
       {ratedStars.map((rated, i) => (
         <span key={i}>
           {rated ? (

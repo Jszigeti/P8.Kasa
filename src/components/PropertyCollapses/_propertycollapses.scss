@@ -2,9 +2,9 @@
   display: flex;
   width: 85%;
   margin: auto;
-  justify-content: center;
-  gap: 4.75rem;
+  justify-content: space-between;
   @media (max-width: 899px) {
+    justify-content: center;
     flex-direction: column;
     gap: 0;
   }
