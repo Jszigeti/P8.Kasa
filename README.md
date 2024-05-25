@@ -1,4 +1,4 @@
-# Kasa
+# Projet 8 - Kasa
 
 React-app website for Kasa, company that manages apartment rentals between individuals
 
