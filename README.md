@@ -4,7 +4,7 @@ React-app website for Kasa, company that manages apartment rentals between indiv
 
 ## Install all dependencies (open a terminal in the project folder)
 
-### `npm-i`
+### `npm i`
 
 ## Run json-server
 
