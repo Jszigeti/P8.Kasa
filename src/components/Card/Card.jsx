@@ -6,7 +6,7 @@ function Card({ propertiesDatasObj }) {
     <NavLink to={`/card/${propertiesDatasObj.id}`} key={propertiesDatasObj.id}>
       <article>
         <img
-          src={propertiesDatasObj.cover}
+          src={propertiesDatasObj.cover_url}
           alt={`${propertiesDatasObj.title} pict`}
         />
         <h2>{propertiesDatasObj.title}</h2>

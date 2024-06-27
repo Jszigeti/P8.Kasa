@@ -6,10 +6,6 @@ React-app website for Kasa, company that manages apartment rentals between indiv
 
 ### `npm-i`
 
-## Run json-server
-
-### `npm run json-server`
-
 ## Launch the app (it must be done in a second terminal)
 
 ### `npm start`
