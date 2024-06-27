@@ -6,6 +6,7 @@ import Footer from "../components/Footer/Footer";
 import { useParams, Navigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { getProperties } from "../api/api";
+import ReturnButton from "../components/ReturnButton/ReturnButton";
 
 function Property() {
   const [properties, setProperties] = useState([]);
@@ -47,6 +48,7 @@ function Property() {
 
   return (
     <>
+      <ReturnButton />
       <Header />
       <main>
         <Slideshow currentProperty={currentProperty} />
