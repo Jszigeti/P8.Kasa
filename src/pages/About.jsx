@@ -4,7 +4,6 @@ import Footer from "../components/Footer/Footer";
 import Collapse from "../components/Collapse/Collapse";
 import { useEffect, useState } from "react";
 import { getAboutData } from "../api/api";
-import ReturnButton from "../components/ReturnButton/ReturnButton";
 
 function About() {
   const [aboutDatas, setAboutDatas] = useState([]);
@@ -24,7 +23,6 @@ function About() {
   }, []);
   return (
     <>
-      <ReturnButton />
       <Header />
       <Banner banner="/assets/about-banner.jpg" />
       {/* Create a collapse for each element of the AboutData array */}
